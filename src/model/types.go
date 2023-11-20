@@ -1,6 +1,6 @@
 package model
 
-type Coin struct {
+type GoCoin struct {
 	Id                string `json:"id"`
 	Rank              string `json:"rank"`
 	Symbol            string `json:"symbol"`
@@ -16,6 +16,6 @@ type Coin struct {
 }
 
 type AssetsResponse struct {
-	Data      []Coin `json:"data"`
-	Timestamp uint64 `json:"timestamp"`
+	Data      []GoCoin `json:"data"`
+	Timestamp uint64   `json:"timestamp"`
 }
