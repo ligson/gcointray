@@ -49,7 +49,6 @@ func ReadWss() {
 				if err != nil {
 					log.Fatal("查询" + key + "失败:" + err.Error())
 				} else {
-					log.Println("数字货币" + goCoin.Symbol + "价格是:" + value)
 					updateCoinPrice(goCoin.Symbol, value)
 				}
 			}
